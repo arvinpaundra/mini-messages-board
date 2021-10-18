@@ -4,8 +4,8 @@
   "description": "Creating a mini message board with Express and deploy it at Heroku",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "web": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "keywords": [
     "Express"
