@@ -1,0 +1,33 @@
+<div class="heading">
+  <h2 class="text-center">Holla, there!</h2>
+  <p class="text-center">What do you want to say ?</p>
+</div>
+<div class="content-btn my-3">
+  <div class="info">
+    <a href="https://github.com/arvinpaundra"><img class="logo mr-3" src="/img/github.png" alt="github" /></a>
+    <a href="https://www.instagram.com/arvinpaundra_/"><img class="logo" src="/img/instagram.png" alt="instagram" /></a>
+  </div>
+  <button class="btn btn-submit"><a href="/new">Want to say something ?</a></button>
+</div>
+<div class="container card">
+  <div class="content">
+    <% if (messages.length === 0) { %>
+    <div class="">Nothing messages here :(</div>
+    <% } %> <% messages.forEach(message => { %>
+    <div class="post">
+      <div class="title">
+        <h2><%= message.title %></h2>
+        <%= message.user %>
+      </div>
+      <span class="text"> <%= message.text %> </span>
+      <br />
+      <div class="d-flex mt-3">
+        <p>
+          <em class="fw-light justify-content-end">on <%= message.added %></em>
+        </p>
+      </div>
+      <hr />
+    </div>
+    <% }) %>
+  </div>
+</div>

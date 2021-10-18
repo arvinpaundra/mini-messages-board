@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+h2 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading p {
+  margin: 0;
+}
+
+.heading p::selection,
+.heading h2::selection {
+  background-color: #ffffff;
+  color: #318dca;
+}
+
+h3 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+hr {
+  margin: 4px 0;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: end;
+  font-size: 14px;
+}
+
+.d-flex p {
+  margin: 0;
+}
+.fw-light {
+  font-weight: 400;
+}
+
+.mt-1 {
+  margin-top: 2px;
+}
+.mt-2 {
+  margin-top: 4px;
+}
+.mt-3 {
+  margin-top: 8px;
+}
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mr-3 {
+  margin-right: 8px;
+}
+
+.my-3 {
+  margin: 12px 0;
+}
+
+body {
+  font-family: 'Poppins', 'PT Serif', sans-serif;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 16px;
+  background-color: #e6e6e4;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #318dca;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  padding: 12px;
+}
+
+.container-form {
+  width: 512px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'] {
+  outline: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
+textarea {
+  outline: none;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
+input[type='text']:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.btn {
+  align-self: flex-end;
+  padding: 10px 22px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+.btn-submit {
+  color: #ffffff;
+  background-color: #318dca;
+}
+
+.btn-submit:hover {
+  background-color: #1e427f;
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 1024px;
+  padding: 8px;
+}
+
+.content-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 1040px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.text {
+  font-family: 'PT Serif', serif;
+}
+
+.info {
+  align-self: end;
+}
+.logo {
+  width: 24px;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: translate(0, -6px);
+}
+
+/*Media Query*/
+@media screen and (max-width: 1070px) {
+  .content,
+  .content-btn {
+    width: 980px;
+  }
+}
+
+/* Large Tablet Landscape */
+@media screen and (max-width: 1024px) {
+  .content,
+  .content-btn {
+    width: 800px;
+  }
+}
+/* Phone + Small Tablet - Landscape */
+@media screen and (max-width: 886px) {
+  .content,
+  .content-btn {
+    width: 768px;
+  }
+}
+/* Large Tablet */
+@media screen and (max-width: 817px) {
+  .content,
+  .content-btn {
+    width: 632px;
+  }
+}
+
+/* Small Tablet - Potrait */
+@media screen and (max-width: 711px) {
+  .content,
+  .content-btn {
+    width: 512px;
+  }
+}
+/* Phone - Landscape + Protrait */
+@media screen and (max-width: 577px) {
+  body {
+    padding: 0;
+    padding-bottom: 16px;
+  }
+  .content,
+  .content-btn {
+    width: 492px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .content,
+  .content-btn {
+    width: 380px;
+  }
+  .container-form {
+    width: 364px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn {
+    padding: 10px 14px;
+    width: 40%;
+    font-size: 12px;
+  }
+  .content,
+  .content-btn {
+    width: 320px;
+  }
+  .container-form {
+    width: 320px;
+  }
+
+  h3,
+  .post .title h2 {
+    font-size: 18px;
+  }
+
+  .title,
+  .text,
+  .d-flex {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .btn {
+    padding: 10px 14px;
+    width: 40%;
+    font-size: 12px;
+  }
+  .content,
+  .content-btn {
+    width: 256px;
+  }
+  .container-form {
+    width: 280px;
+  }
+
+  h3,
+  .post .title h2 {
+    font-size: 18px;
+  }
+
+  .title,
+  .text,
+  .d-flex {
+    font-size: 12px;
+  }
+}

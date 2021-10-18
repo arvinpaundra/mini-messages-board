@@ -1,0 +1,27 @@
+<div class="container card mt-4">
+  <div class="container-form">
+    <h3 class="text-center">Send a New Message</h3>
+    <hr />
+    <form action="/new" method="post">
+      <div class="form-control">
+        <tr>
+          <td>
+            <label for="user" class="mt-4">Username</label>
+            <input type="text" class="mt-1" name="user" id="user" placeholder="real or alias ?" required />
+          </td>
+        </tr>
+        <tr>
+          <label for="title" class="mt-4">Title</label>
+          <input type="text" class="mt-1" name="title" id="title" placeholder="add some title" required />
+        </tr>
+        <tr>
+          <td>
+            <label for="text" class="mt-4">Write a message</label>
+            <textarea class="mt-1" name="text" id="text" rows="6" required></textarea>
+          </td>
+        </tr>
+      </div>
+      <button type="submit" class="btn btn-submit mt-4">Submit</button>
+    </form>
+  </div>
+</div>
