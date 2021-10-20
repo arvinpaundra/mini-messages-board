@@ -1,11 +1,13 @@
 const { addMessage } = require('../data/messages');
+const { DateTime } = require('luxon');
 
 const postNewMessage = (req, res, next) => {
+  const dt = DateTime.now();
   const data = {
     user: req.body.user,
     title: req.body.title,
     text: req.body.text,
-    added: new Date().toLocaleString(),
+    added: dt.toLocaleString(DateTime.DATETIME_SHORT),
   };
 
   const messages = addMessage(data);
