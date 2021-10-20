@@ -7,7 +7,7 @@ const postNewMessage = (req, res, next) => {
     user: req.body.user,
     title: req.body.title,
     text: req.body.text,
-    added: dt.toLocaleString(DateTime.DATETIME_SHORT),
+    added: dt.toLocaleString(DateTime.DATE_FULL),
   };
 
   const messages = addMessage(data);
